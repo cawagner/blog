@@ -3,7 +3,8 @@ article.post.preview
     h1
       a(href=post.url)
         = post.title
-    time(pubdate) #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+    time(pubdate)
+      = moment(post.date).format('MMMM Do YYYY')
   != post.preview
   footer
     - each tag in post.tags
