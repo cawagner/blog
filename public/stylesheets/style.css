@@ -2,11 +2,16 @@ body {
   padding: 50px;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #eee;
+  line-height: 150%;
 }
 .post {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  max-width: 700px;
+}
+.post header {
+  margin-bottom: 15px;
 }
 .post header h1 {
   color: #d00;
