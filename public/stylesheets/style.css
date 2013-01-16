@@ -1,9 +1,9 @@
 body {
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #eee;
+  background-color: #aab;
   line-height: 150%;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   body {
     width: 900px;
     margin: auto;
@@ -38,7 +38,7 @@ ul.tags li a {
   text-decoration: none;
 }
 .post {
-  background-color: #fff;
+  background-color: #ddd;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -47,13 +47,13 @@ ul.tags li a {
   margin-bottom: 15px;
 }
 .post header h1 {
-  color: #d00;
+  color: #368;
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
 }
 .post header a {
-  color: #d00;
+  color: #368;
   text-decoration: none;
 }
 .post footer {
@@ -68,5 +68,5 @@ ul.tags li a {
 .post time {
   font-variant: small-caps;
   font-size: 12px;
-  color: #b10000;
+  color: #29526d;
 }
