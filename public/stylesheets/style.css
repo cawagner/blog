@@ -18,21 +18,26 @@ body {
 .sidebar aside h1 {
   font-size: 16px;
 }
-.sidebar aside .tags {
+ul.tags {
   margin: 0;
   padding: 0;
+  font-size: 12px;
 }
-.sidebar aside .tags li {
+ul.tags li {
   display: inline;
   padding: 4px;
   margin: 4px;
-  background-color: #fcfcfc;
+  background-color: #ffe;
   list-style-type: none;
+}
+ul.tags li a {
+  text-decoration: none;
 }
 .post {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  margin-bottom: 20px;
   max-width: 700px;
 }
 .post header {
@@ -41,11 +46,21 @@ body {
 .post header h1 {
   color: #d00;
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 .post header a {
   color: #d00;
   text-decoration: none;
+}
+.post footer {
+  font-size: 12px;
+}
+.post footer span.label {
+  font-variant: small-caps;
+}
+.post footer ul.tags {
+  display: inline;
 }
 .post time {
   font-variant: small-caps;

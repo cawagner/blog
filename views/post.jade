@@ -10,6 +10,8 @@ block content
         = moment(post.date).format('MMMM Do YYYY')
     != post.content
     footer
-      - each tag in post.tags
-        a(href=tagUrl(tag))
-          span.label.label-info #{tag}
+      span.label Tags:
+      ul.tags
+        - each tag in post.tags
+          li
+            a(rel='tag',href=tagUrl(tag)) #{tag}

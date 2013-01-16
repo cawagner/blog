@@ -7,6 +7,8 @@ article.post.preview
       = moment(post.date).format('MMMM Do YYYY')
   != post.preview
   footer
-    - each tag in post.tags
-      a(href=tagUrl(tag))
-        span.label.label-info #{tag}
+    span.label Tags:
+    ul.tags
+      - each tag in post.tags
+        li
+          a(href=tagUrl(tag)) #{tag}
