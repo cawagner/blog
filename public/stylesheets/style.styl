@@ -1,17 +1,17 @@
-header-color = #368
-page-background-color = #aab
+header-color = rgb(40, 80, 160)
+page-background-color = rgb(15, 30, 80)
 tag-color = #ffe
 
 body
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif
-  background-color: page-background-color
+  background: page-background-color url('../images/irongrip.png')
   line-height: 150%
 
 @media screen and (min-width: 1000px)
     body
       width: 900px
       margin: auto
-      padding: 50px
+      padding: 0
 
     .content
         width: 700px
@@ -41,9 +41,12 @@ ul.tags
 
 .post
     background-color: #ddd
+    margin: 15px auto
     padding: 20px
     border-radius: 10px
-    margin-bottom: 20px
+    border-left: 6px solid darken(header-color, 50%)
+    border-right: 6px solid #ddd
+    max-width: 700px
 
     header
         h1
