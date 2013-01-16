@@ -13,11 +13,14 @@ html
     .content
       block content
     .sidebar
-      nav
+      aside
+        h1 Categories
         ul.categories
           - each cat in categoryList
             li
               a(href=categoryUrl(cat)) #{cat}
+      aside
+        h1 Tags
         ul.tags
           - each tag in tagList
             li

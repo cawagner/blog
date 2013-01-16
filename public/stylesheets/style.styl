@@ -1,10 +1,35 @@
 header-color = #d00
+page-background-color = #eee
 
 body
   padding: 50px
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif
-  background-color: #eee
+  background-color: page-background-color
   line-height: 150%
+  width: 900px
+  margin: auto
+
+.content
+    width: 700px
+    float: left
+
+.sidebar
+    width: 180px
+    float: right
+    padding-left: 20px
+
+    aside
+        h1
+            font-size: 16px
+        .tags
+            margin: 0
+            padding: 0
+            li
+                display: inline
+                padding: 4px
+                margin: 4px
+                background-color: lighten(page-background-color, 80%)
+                list-style-type: none
 
 .post
     background-color: white

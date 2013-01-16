@@ -3,6 +3,31 @@ body {
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #eee;
   line-height: 150%;
+  width: 900px;
+  margin: auto;
+}
+.content {
+  width: 700px;
+  float: left;
+}
+.sidebar {
+  width: 180px;
+  float: right;
+  padding-left: 20px;
+}
+.sidebar aside h1 {
+  font-size: 16px;
+}
+.sidebar aside .tags {
+  margin: 0;
+  padding: 0;
+}
+.sidebar aside .tags li {
+  display: inline;
+  padding: 4px;
+  margin: 4px;
+  background-color: #fcfcfc;
+  list-style-type: none;
 }
 .post {
   background-color: #fff;

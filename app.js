@@ -9,10 +9,10 @@ poet.set({
     postsPerPage : 3,
     posts                : './_posts',
     metaFormat     : 'json'
-}).createPostRoute( '/myposts/:post', 'post' )
-    .createPageRoute( '/pagination/:page', 'page' )
-    .createTagRoute( '/mytags/:tag', 'tag' )
-    .createCategoryRoute( '/mycategories/:category', 'category' )
+}).createPostRoute( '/posts/:post', 'post' )
+    .createPageRoute( '/page/:page', 'page' )
+    .createTagRoute( '/tags/:tag', 'tag' )
+    .createCategoryRoute( '/categories/:category', 'category' )
     .init();
 
 app.locals.moment = moment;
