@@ -51,6 +51,34 @@ body>footer
         no-margin-padding()
         dark-bg()
 
+.sidebar aside
+    padding-bottom: 0.5em
+    h1
+        font-size: 16px
+        color: rgb(60, 200, 250)
+        span.icon
+            color: rgb(60, 150, 250)
+    p
+        dark-bg()
+        font-size: small-font-size
+    span.icon
+        padding-right: icon-spacing
+        font-size: 16px
+    ul
+        dark-bg()
+        margin: 0
+        font-size: 13px
+    ul:not(.tags)
+        padding-left: 30px
+    .social
+        padding-left: icon-spacing
+        a
+            text-decoration: none
+
+@media screen and (max-width: 1000px)
+    .comments
+        display: none
+
 @media screen and (min-width: 1000px)
     body
       width: 900px
@@ -64,30 +92,6 @@ body>footer
     .sidebar
         width: 180px
         float: right
-
-        aside
-            padding-bottom: 0.5em
-            h1
-                font-size: 16px
-                color: rgb(60, 200, 250)
-                span.icon
-                    color: rgb(60, 150, 250)
-            p
-                dark-bg()
-                font-size: small-font-size
-        span.icon
-            padding-right: icon-spacing
-            font-size: 16px
-        ul
-            dark-bg()
-            margin: 0
-            font-size: 13px
-        ul:not(.tags)
-            padding-left: 30px
-        .social
-            padding-left: icon-spacing
-            a
-                text-decoration: none
 
 
 ul.tags
@@ -103,8 +107,8 @@ ul.tags
 
 .post
     background-color: #ddd
-    margin: 15px auto
-    padding: 20px
+    margin: 1em auto
+    padding: 1.5em
     border-radius: 10px
     border-left: 4px solid rgb(40, 120, 220)
 
@@ -117,11 +121,11 @@ ul.tags
     header
         h1
             no-margin-padding()
-            margin-bottom: 5px
+            margin-bottom: 0.5em
         a:link,a:visited
             color: header-color
             text-decoration: none
-        margin-bottom: 15px
+        margin-bottom: 1em
 
     footer
         font-size: small-font-size
@@ -146,11 +150,12 @@ ul.tags
         padding-left: icon-spacing
     li
         dark-bg()
+        display: inline
+    li a
         display: inline-block
-        padding: icon-spacing
         border-radius: 50%
         background-color: #333
-    li.active
+        padding: icon-spacing
+    li.active a
         background-color: #555
-        a
-            text-decoration: none
+        text-decoration: none
