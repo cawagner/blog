@@ -2,6 +2,12 @@ body {
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #0f1e50 url("../images/irongrip.png");
 }
+body>header {
+  padding-top: 1em;
+}
+body>header h1 {
+  font-size: 1.4em;
+}
 body>header h1 a {
   color: #50b4f0;
   text-decoration: none;
