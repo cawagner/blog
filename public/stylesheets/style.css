@@ -88,7 +88,7 @@ body>footer p a:visited {
 .sidebar aside .social a {
   text-decoration: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   header {
     width: 90%;
   }
@@ -104,7 +104,7 @@ body>footer p a:visited {
     display: none;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   body {
     width: 900px;
     margin: 0 auto;
