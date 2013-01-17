@@ -27,14 +27,14 @@ html
           a(rel="me",href="https://twitter.com/chris_a_wagner")
             span.icon.icon-twitter
             |@chris_a_wagner
-      aside
-        h1
-          span.icon-folder-open.icon
-          | Categories
-        ul
-          - each cat in categoryList
-            li
-              a(href=categoryUrl(cat)) #{cat}
+      //- aside
+      //-   h1
+      //-     span.icon-folder-open.icon
+      //-     | Categories
+      //-   ul
+      //-     - each cat in categoryList
+      //-       li
+      //-         a(href=categoryUrl(cat)) #{cat}
       aside
         h1
           span.icon-tags.icon
@@ -45,7 +45,7 @@ html
               a(href=tagUrl(tag)) #{tag}
       aside
         h1
-          span.icon-heart.icon
+          span.icon-user.icon
           | Blogroll
         ul
           li
