@@ -129,8 +129,7 @@ ul.tags li a {
   margin: 15px auto;
   padding: 20px;
   border-radius: 10px;
-  border-left: 6px solid #142850;
-  border-right: 6px solid #ddd;
+  border-left: 4px solid #2878dc;
   max-width: 700px;
   line-height: 150%;
 }
@@ -143,11 +142,11 @@ ul.tags li a {
 .post header h1 {
   padding: 0;
   margin: 0;
-  color: #2850a0;
   margin-bottom: 5px;
 }
-.post header a {
-  color: #2850a0;
+.post header a:link,
+.post header a:visited {
+  color: #3c96fa;
   text-decoration: none;
 }
 .post footer {
@@ -156,7 +155,7 @@ ul.tags li a {
 .post footer span.label {
   font-variant: small-caps;
   font-size: 12px;
-  color: #204080;
+  color: #0676f2;
 }
 .post footer ul.tags {
   display: inline;
@@ -168,7 +167,7 @@ ul.tags li a {
 .post time {
   font-variant: small-caps;
   font-size: 12px;
-  color: #204080;
+  color: #0676f2;
 }
 ul.pagination {
   display: inline;
