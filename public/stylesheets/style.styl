@@ -19,7 +19,6 @@ dark-bg()
         color: silver
 
 label()
-    font-variant: small-caps
     font-size: small-font-size
     color: darken(header-color, 20%)
 
@@ -65,6 +64,7 @@ body>footer
         float: right
 
         aside
+            padding-bottom: 0.5em
             h1
                 font-size: 16px
                 color: rgb(60, 200, 250)
@@ -76,10 +76,11 @@ body>footer
         span.icon
             padding-right: icon-spacing
             font-size: 16px
-        ul.categories
+        ul
             dark-bg()
             margin: 0
             font-size: 13px
+        ul:not(.tags)
             padding-left: 30px
         .social
             padding-left: icon-spacing
@@ -90,15 +91,13 @@ body>footer
 ul.tags
     no-margin-padding()
     font-size: small-font-size
+    display: inline
     li
         display: inline
         padding: 4px
         margin: 4px
-        background-color: tag-color
         list-style-type: none
-        a
-            text-decoration: none
-            color: black
+        margin-right: icon-spacing
 
 .post
     background-color: #ddd
@@ -124,10 +123,6 @@ ul.tags
 
     footer
         font-size: small-font-size
-        span.label
-            label()
-        ul.tags
-            display: inline
 
     .icon-calendar
         font-size: small-font-size

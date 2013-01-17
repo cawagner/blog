@@ -31,7 +31,7 @@ html
         h1
           span.icon-folder-open.icon
           | Categories
-        ul.categories
+        ul
           - each cat in categoryList
             li
               a(href=categoryUrl(cat)) #{cat}
@@ -43,6 +43,15 @@ html
           - each tag in tagList
             li
               a(href=tagUrl(tag)) #{tag}
+      aside
+        h1
+          span.icon-heart.icon
+          | Blogroll
+        ul
+          li
+            a(href="http://ardalis.com/") Steve Smith
+          li
+            a(href="http://brendan.enrick.com/") Brendan Enrick
     footer
       p Copyright &copy; 2013 Chris Wagner.
       p Powered by <a href="http://jsantell.github.com/poet/">Poet</a>.

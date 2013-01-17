@@ -49,6 +49,9 @@ body>footer p a:visited {
     width: 180px;
     float: right;
   }
+  .sidebar aside {
+    padding-bottom: 0.5em;
+  }
   .sidebar aside h1 {
     font-size: 16px;
     color: #3cc8fa;
@@ -73,20 +76,22 @@ body>footer p a:visited {
     padding-right: 6px;
     font-size: 16px;
   }
-  .sidebar ul.categories {
+  .sidebar ul {
     color: #eee;
     margin: 0;
     font-size: 13px;
-    padding-left: 30px;
   }
-  .sidebar ul.categories a:link {
+  .sidebar ul a:link {
     color: #fff;
   }
-  .sidebar ul.categories a:hover {
+  .sidebar ul a:hover {
     color: #abbad7;
   }
-  .sidebar ul.categories a:visited {
+  .sidebar ul a:visited {
     color: #c0c0c0;
+  }
+  .sidebar ul:not(.tags) {
+    padding-left: 30px;
   }
   .sidebar .social {
     padding-left: 6px;
@@ -99,17 +104,14 @@ ul.tags {
   padding: 0;
   margin: 0;
   font-size: 12px;
+  display: inline;
 }
 ul.tags li {
   display: inline;
   padding: 4px;
   margin: 4px;
-  background-color: #ffe;
   list-style-type: none;
-}
-ul.tags li a {
-  text-decoration: none;
-  color: #000;
+  margin-right: 6px;
 }
 .post {
   background-color: #ddd;
@@ -139,20 +141,11 @@ ul.tags li a {
 .post footer {
   font-size: 12px;
 }
-.post footer span.label {
-  font-variant: small-caps;
-  font-size: 12px;
-  color: #0676f2;
-}
-.post footer ul.tags {
-  display: inline;
-}
 .post .icon-calendar {
   font-size: 12px;
   margin-right: 6px;
 }
 .post time {
-  font-variant: small-caps;
   font-size: 12px;
   color: #0676f2;
 }
