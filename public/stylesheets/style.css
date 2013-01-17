@@ -149,25 +149,43 @@ ul.tags li {
   font-size: 12px;
   color: #0676f2;
 }
-ul.pagination {
-  display: inline;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-ul.pagination li {
+div.pagination {
   color: #eee;
-  display: inline-block;
 }
-ul.pagination li a:link {
+div.pagination a:link {
   color: #fff;
 }
-ul.pagination li a:hover {
+div.pagination a:hover {
   color: #abbad7;
 }
-ul.pagination li a:visited {
+div.pagination a:visited {
   color: #c0c0c0;
 }
-ul.pagination .active a {
+div.pagination ul {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 6px;
+}
+div.pagination li {
+  color: #eee;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #333;
+}
+div.pagination li a:link {
+  color: #fff;
+}
+div.pagination li a:hover {
+  color: #abbad7;
+}
+div.pagination li a:visited {
+  color: #c0c0c0;
+}
+div.pagination li.active {
+  background-color: #555;
+}
+div.pagination li.active a {
   text-decoration: none;
 }

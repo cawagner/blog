@@ -130,13 +130,21 @@ ul.tags
     time
         label()
 
-ul.pagination
-    display: inline
-    list-style-type: none
-    no-margin-padding()
+div.pagination
+    dark-bg()
 
+    ul
+        display: inline
+        list-style-type: none
+        margin: 0
+        padding-left: icon-spacing
     li
         dark-bg()
         display: inline-block
-    .active a
-        text-decoration: none
+        padding: icon-spacing
+        border-radius: 50%
+        background-color: #333
+    li.active
+        background-color: #555
+        a
+            text-decoration: none
