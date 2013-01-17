@@ -6,6 +6,13 @@ no-margin-padding()
     padding: 0
     margin: 0
 
+dark-bg()
+    color: #ddd
+    a:link
+        color: white
+    a:visited
+        color: silver
+
 label()
     font-variant: small-caps
     font-size: 12px
@@ -28,8 +35,7 @@ body>footer
     color: #ddd
     p
         no-margin-padding()
-        a
-            color: white
+        dark-bg()
 
 @media screen and (min-width: 1000px)
     body
@@ -44,11 +50,15 @@ body>footer
     .sidebar
         width: 180px
         float: right
-        padding-left: 20px
 
         aside
             h1
                 font-size: 16px
+                color: lighten(desaturate(header-color, 30%), 50%)
+            p
+                font-size: 12px
+                dark-bg()
+
 
 ul.tags
     no-margin-padding()
@@ -101,10 +111,7 @@ ul.pagination
     no-margin-padding()
 
     li
+        dark-bg()
         display: inline-block
-        a:link
-            color: white
-        a:visited
-            color: silver
     .active a
         text-decoration: none
