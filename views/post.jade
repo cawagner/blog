@@ -1,7 +1,10 @@
 extends layout
 
 block title
-  | #{post.title} - #{' '}
+    | #{post.title} - #{' '}
+
+block head
+    link(rel="canonical",href="http://chriswagnerblog.com#{post.url}")
 
 block content
-  include includes/post
+    include includes/post
