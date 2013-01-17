@@ -9,4 +9,4 @@ I've decided to restart my blog after about a year and a half of complete inacti
 
 That is exactly why I'm kicking the new blog off with a picture of my cat.
 
-![Moses is sleeping!](/media/moses1.jpg)
+![Moses](/media/moses1.jpg)

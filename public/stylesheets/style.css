@@ -2,6 +2,10 @@ body {
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #0f1e50 url("../images/irongrip.png");
 }
+body>header h1 a {
+  color: #50b4f0;
+  text-decoration: none;
+}
 body>footer {
   clear: both;
   text-align: center;
@@ -18,7 +22,7 @@ body>footer p a {
 @media screen and (min-width: 1000px) {
   body {
     width: 900px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
   }
   .content {
@@ -35,8 +39,8 @@ body>footer p a {
   }
 }
 ul.tags {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-size: 12px;
 }
 ul.tags li {
@@ -59,14 +63,17 @@ ul.tags li a {
   max-width: 700px;
   line-height: 150%;
 }
+.post img {
+  max-width: 100%;
+}
 .post header {
   margin-bottom: 15px;
 }
 .post header h1 {
-  color: #2850a0;
-  margin: 0;
-  margin-bottom: 5px;
   padding: 0;
+  margin: 0;
+  color: #2850a0;
+  margin-bottom: 5px;
 }
 .post header a {
   color: #2850a0;
@@ -77,6 +84,8 @@ ul.tags li a {
 }
 .post footer span.label {
   font-variant: small-caps;
+  font-size: 12px;
+  color: #204080;
 }
 .post footer ul.tags {
   display: inline;
@@ -89,8 +98,8 @@ ul.tags li a {
 ul.pagination {
   display: inline;
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 ul.pagination li {
   display: inline-block;
