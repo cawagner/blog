@@ -89,23 +89,10 @@ body>footer p a:visited {
     color: #c0c0c0;
   }
   .sidebar .social {
-    color: #eee;
-  }
-  .sidebar .social a:link {
-    color: #fff;
-  }
-  .sidebar .social a:hover {
-    color: #abbad7;
-  }
-  .sidebar .social a:visited {
-    color: #c0c0c0;
+    padding-left: 6px;
   }
   .sidebar .social a {
-    display: block;
     text-decoration: none;
-    font-size: 14px;
-    line-height: 150%;
-    margin-left: 12px;
   }
 }
 ul.tags {
