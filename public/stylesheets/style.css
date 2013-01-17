@@ -51,7 +51,10 @@ body>footer p a:visited {
   }
   .sidebar aside h1 {
     font-size: 16px;
-    color: #91a7d2;
+    color: #3cc8fa;
+  }
+  .sidebar aside h1 span.icon {
+    color: #3c96fa;
   }
   .sidebar aside p {
     color: #eee;
@@ -66,11 +69,15 @@ body>footer p a:visited {
   .sidebar aside p a:visited {
     color: #c0c0c0;
   }
+  .sidebar span.icon {
+    padding-right: 6px;
+    font-size: 16px;
+  }
   .sidebar ul.categories {
     color: #eee;
     margin: 0;
     font-size: 13px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
   .sidebar ul.categories a:link {
     color: #fff;
@@ -93,15 +100,12 @@ body>footer p a:visited {
   .sidebar .social a:visited {
     color: #c0c0c0;
   }
-  .sidebar .social span {
-    padding-right: 6px;
-    font-size: 16px;
-  }
   .sidebar .social a {
     display: block;
     text-decoration: none;
     font-size: 14px;
     line-height: 150%;
+    margin-left: 12px;
   }
 }
 ul.tags {

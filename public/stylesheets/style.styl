@@ -67,25 +67,28 @@ body>footer
         aside
             h1
                 font-size: 16px
-                color: lighten(desaturate(header-color, 30%), 50%)
+                color: rgb(60, 200, 250)
+                span.icon
+                    color: rgb(60, 150, 250)
             p
                 dark-bg()
                 font-size: small-font-size
+        span.icon
+            padding-right: icon-spacing
+            font-size: 16px
         ul.categories
             dark-bg()
             margin: 0
             font-size: 13px
-            padding-left: 20px
+            padding-left: 30px
         .social
             dark-bg()
-            span
-                padding-right: icon-spacing
-                font-size: 16px
             a
                 display: block
                 text-decoration: none
                 font-size: 14px
                 line-height: 150%
+                margin-left: 2*icon-spacing
 
 
 ul.tags
