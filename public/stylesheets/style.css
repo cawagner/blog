@@ -15,6 +15,9 @@ body>.content a:visited {
 body>.content a:hover {
   color: #3e76e7;
 }
+body>.content>h2 {
+  color: #3cc8fa;
+}
 body>footer {
   clear: both;
   text-align: center;
