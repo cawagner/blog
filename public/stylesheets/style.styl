@@ -1,21 +1,26 @@
 header-color = rgb(40, 80, 160)
+link-color = rgb(40, 80, 160)
 page-background-color = rgb(15, 30, 80)
 tag-color = #ffe
+icon-spacing = 6px
+small-font-size = 12px
 
 no-margin-padding()
     padding: 0
     margin: 0
 
 dark-bg()
-    color: #ddd
+    color: #eee
     a:link
         color: white
+    a:hover
+        color: lighten(desaturate(link-color, 40%), 60%)
     a:visited
         color: silver
 
 label()
     font-variant: small-caps
-    font-size: 12px
+    font-size: small-font-size
     color: darken(header-color, 20%)
 
 body
@@ -28,10 +33,18 @@ body>header
             color: rgb(80, 180, 240)
             text-decoration: none
 
+body>.content
+    a
+        color: link-color
+    a:visited
+        color: darken(saturate(link-color, 30%), 30%)
+    a:hover
+        color: lighten(saturate(link-color, 30%), 30%)
+
 body>footer
     clear: both
     text-align: center
-    font-size: 12px
+    font-size: small-font-size
     color: #ddd
     p
         no-margin-padding()
@@ -52,15 +65,21 @@ body>footer
         float: right
 
         aside
-            dark-bg()
             h1
                 font-size: 16px
                 color: lighten(desaturate(header-color, 30%), 50%)
             p
-                font-size: 12px
+                dark-bg()
+                font-size: small-font-size
+        ul.categories
+            dark-bg()
+            margin: 0
+            font-size: 13px
+            padding-left: 20px
         .social
+            dark-bg()
             span
-                padding-right: 6px
+                padding-right: icon-spacing
                 font-size: 16px
             a
                 display: block
@@ -71,7 +90,7 @@ body>footer
 
 ul.tags
     no-margin-padding()
-    font-size: 12px
+    font-size: small-font-size
     li
         display: inline
         padding: 4px
@@ -80,14 +99,15 @@ ul.tags
         list-style-type: none
         a
             text-decoration: none
+            color: black
 
 .post
     background-color: #ddd
     margin: 15px auto
     padding: 20px
     border-radius: 10px
-    border-left: 6px solid darken(header-color, 50%)
-    border-right: 6px solid #ddd
+    border-left:6px solid darken(header-color, 50%)
+    border-right:6px solid #ddd
     max-width: 700px
     line-height: 150%
 
@@ -105,12 +125,15 @@ ul.tags
         margin-bottom: 15px
 
     footer
-        font-size: 12px
+        font-size: small-font-size
         span.label
             label()
         ul.tags
             display: inline
 
+    .icon-calendar
+        font-size: small-font-size
+        margin-right: icon-spacing
     time
         label()
 

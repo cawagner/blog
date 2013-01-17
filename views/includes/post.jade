@@ -3,11 +3,12 @@ article.post.full
       h1
         a(href=post.url)
           = post.title
+      span.icon-calendar
       time(pubdate,datetime=moment(post.date).format())
         = moment(post.date).format('MMMM Do YYYY')
     != post.content
     footer
-      span.label Tags:
+      span.icon-tags
       ul.tags
         - each tag in post.tags
           li

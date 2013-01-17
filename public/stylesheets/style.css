@@ -6,6 +6,15 @@ body>header h1 a {
   color: #50b4f0;
   text-decoration: none;
 }
+body>.content a {
+  color: #2850a0;
+}
+body>.content a:visited {
+  color: #0f347d;
+}
+body>.content a:hover {
+  color: #3e76e7;
+}
 body>footer {
   clear: both;
   text-align: center;
@@ -15,10 +24,13 @@ body>footer {
 body>footer p {
   padding: 0;
   margin: 0;
-  color: #ddd;
+  color: #eee;
 }
 body>footer p a:link {
   color: #fff;
+}
+body>footer p a:hover {
+  color: #abbad7;
 }
 body>footer p a:visited {
   color: #c0c0c0;
@@ -37,21 +49,49 @@ body>footer p a:visited {
     width: 180px;
     float: right;
   }
-  .sidebar aside {
-    color: #ddd;
-  }
-  .sidebar aside a:link {
-    color: #fff;
-  }
-  .sidebar aside a:visited {
-    color: #c0c0c0;
-  }
   .sidebar aside h1 {
     font-size: 16px;
     color: #91a7d2;
   }
   .sidebar aside p {
+    color: #eee;
     font-size: 12px;
+  }
+  .sidebar aside p a:link {
+    color: #fff;
+  }
+  .sidebar aside p a:hover {
+    color: #abbad7;
+  }
+  .sidebar aside p a:visited {
+    color: #c0c0c0;
+  }
+  .sidebar ul.categories {
+    color: #eee;
+    margin: 0;
+    font-size: 13px;
+    padding-left: 20px;
+  }
+  .sidebar ul.categories a:link {
+    color: #fff;
+  }
+  .sidebar ul.categories a:hover {
+    color: #abbad7;
+  }
+  .sidebar ul.categories a:visited {
+    color: #c0c0c0;
+  }
+  .sidebar .social {
+    color: #eee;
+  }
+  .sidebar .social a:link {
+    color: #fff;
+  }
+  .sidebar .social a:hover {
+    color: #abbad7;
+  }
+  .sidebar .social a:visited {
+    color: #c0c0c0;
   }
   .sidebar .social span {
     padding-right: 6px;
@@ -78,6 +118,7 @@ ul.tags li {
 }
 ul.tags li a {
   text-decoration: none;
+  color: #000;
 }
 .post {
   background-color: #ddd;
@@ -116,6 +157,10 @@ ul.tags li a {
 .post footer ul.tags {
   display: inline;
 }
+.post .icon-calendar {
+  font-size: 12px;
+  margin-right: 6px;
+}
 .post time {
   font-variant: small-caps;
   font-size: 12px;
@@ -128,11 +173,14 @@ ul.pagination {
   margin: 0;
 }
 ul.pagination li {
-  color: #ddd;
+  color: #eee;
   display: inline-block;
 }
 ul.pagination li a:link {
   color: #fff;
+}
+ul.pagination li a:hover {
+  color: #abbad7;
 }
 ul.pagination li a:visited {
   color: #c0c0c0;
