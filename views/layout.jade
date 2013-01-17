@@ -5,6 +5,7 @@ html
       | Chris Wagner's Blog
     meta(charset='utf-8')
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    link(rel='stylesheet', type='text/css', href='//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css')'
     include includes/mixins
   body
     header
@@ -20,6 +21,14 @@ html
           | I'm Chris Wagner, a software developer working in <a href="http://www.telerik.com">Telerik</a>'s <a href="http://www.telerik.com/services/overview.aspx">Services Team</a>.
         p
           | As it would happen, my day job and my hobbies intersect very nicely.
+      aside.social
+        h1 Social Media
+        a.line(href="https://twitter.com/chris_a_wagner")
+          span.icon-twitter
+          | @chris_a_wagner
+        a(href="http://www.github.com/eelhovercraft")
+          span.icon-github-alt
+          | cawagner
       aside
         h1 Categories
         ul.categories
