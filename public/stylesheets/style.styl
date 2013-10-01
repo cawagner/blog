@@ -4,27 +4,27 @@ page-background-color = rgb(15, 30, 80)
 tag-color = #ffe
 icon-spacing = 6px
 small-font-size = 12px
+text-color = #444
 
 no-margin-padding()
     padding: 0
     margin: 0
 
-dark-bg()
-    color: #eee
-    a:link
-        color: white
-    a:hover
-        color: lighten(desaturate(link-color, 40%), 60%)
-    a:visited
-        color: silver
-
 label()
     font-size: small-font-size
-    color: darken(header-color, 20%)
+    color: lighten(text-color, 50%)
 
 body
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif
-    background: page-background-color url('../images/irongrip.jpg')
+    background-color: white
+    color: text-color
+
+a
+    color: link-color
+a:visited
+    color: darken(saturate(link-color, 30%), 30%)
+a:hover
+    color: lighten(saturate(link-color, 30%), 30%)
 
 body>header
     padding-top: 1em
@@ -34,13 +34,6 @@ body>header
             color: rgb(80, 180, 240)
             text-decoration: none
 
-body>.content
-    a
-        color: link-color
-    a:visited
-        color: darken(saturate(link-color, 30%), 30%)
-    a:hover
-        color: lighten(saturate(link-color, 30%), 30%)
 body>.content>h2
     color: rgb(60, 200, 250)
 
@@ -48,10 +41,8 @@ body>footer
     clear: both
     text-align: center
     font-size: small-font-size
-    color: #ddd
     p
         no-margin-padding()
-        dark-bg()
 
 .sidebar aside
     padding-bottom: 0.5em
@@ -61,13 +52,11 @@ body>footer
         span.icon
             color: rgb(60, 150, 250)
     p
-        dark-bg()
         font-size: small-font-size
     span.icon
         padding-right: icon-spacing
         font-size: 16px
     ul
-        dark-bg()
         margin: 0
         font-size: 13px
     ul:not(.tags)
@@ -79,7 +68,6 @@ body>footer
 
 @media screen and (max-width: 900px)
     .sidebar
-        background-color: #222733
         padding: 0.5em
         margin: 0.5em
     .comments
@@ -113,11 +101,9 @@ ul.tags
         margin-right: icon-spacing
 
 .post
-    background-color: #ddd
+    background-color: #eee
     margin: 1em auto
     padding: 1.5em
-    border-radius: 10px
-    border-left: 4px solid rgb(40, 120, 220)
 
     line-height: 150%
 
@@ -147,22 +133,20 @@ ul.tags
     padding: 20px
 
 .pagination
-    dark-bg()
-
     ul
         display: inline
         list-style-type: none
         margin: 0
         padding-left: icon-spacing
     li
-        dark-bg()
         display: inline
     li a
         display: inline-block
         font-size: 16px
-        border-radius: 50%
-        background-color: #333
+        background-color: #eee
+        border: 1px solid #ddd
         padding: icon-spacing
     li.active a
-        background-color: #555
+        border: 1px solid #888
+        font-weight: bold
         text-decoration: none

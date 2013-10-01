@@ -1,6 +1,16 @@
 body {
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #0f1e50 url("../images/irongrip.jpg");
+  background-color: #fff;
+  color: #444;
+}
+a {
+  color: #2850a0;
+}
+a:visited {
+  color: #0f347d;
+}
+a:hover {
+  color: #3e76e7;
 }
 body>header {
   padding-top: 1em;
@@ -12,15 +22,6 @@ body>header h1 a {
   color: #50b4f0;
   text-decoration: none;
 }
-body>.content a {
-  color: #2850a0;
-}
-body>.content a:visited {
-  color: #0f347d;
-}
-body>.content a:hover {
-  color: #3e76e7;
-}
 body>.content>h2 {
   color: #3cc8fa;
 }
@@ -28,21 +29,10 @@ body>footer {
   clear: both;
   text-align: center;
   font-size: 12px;
-  color: #ddd;
 }
 body>footer p {
   padding: 0;
   margin: 0;
-  color: #eee;
-}
-body>footer p a:link {
-  color: #fff;
-}
-body>footer p a:hover {
-  color: #abbad7;
-}
-body>footer p a:visited {
-  color: #c0c0c0;
 }
 .sidebar aside {
   padding-bottom: 0.5em;
@@ -55,35 +45,15 @@ body>footer p a:visited {
   color: #3c96fa;
 }
 .sidebar aside p {
-  color: #eee;
   font-size: 12px;
-}
-.sidebar aside p a:link {
-  color: #fff;
-}
-.sidebar aside p a:hover {
-  color: #abbad7;
-}
-.sidebar aside p a:visited {
-  color: #c0c0c0;
 }
 .sidebar aside span.icon {
   padding-right: 6px;
   font-size: 16px;
 }
 .sidebar aside ul {
-  color: #eee;
   margin: 0;
   font-size: 13px;
-}
-.sidebar aside ul a:link {
-  color: #fff;
-}
-.sidebar aside ul a:hover {
-  color: #abbad7;
-}
-.sidebar aside ul a:visited {
-  color: #c0c0c0;
 }
 .sidebar aside ul:not(.tags) {
   padding-left: 30px;
@@ -96,7 +66,6 @@ body>footer p a:visited {
 }
 @media screen and (max-width: 900px) {
   .sidebar {
-    background-color: #222733;
     padding: 0.5em;
     margin: 0.5em;
   }
@@ -133,11 +102,9 @@ ul.tags li {
   margin-right: 6px;
 }
 .post {
-  background-color: #ddd;
+  background-color: #eee;
   margin: 1em auto;
   padding: 1.5em;
-  border-radius: 10px;
-  border-left: 4px solid #2878dc;
   line-height: 150%;
 }
 .post img {
@@ -165,23 +132,11 @@ ul.tags li {
 }
 .post time {
   font-size: 12px;
-  color: #0676f2;
+  color: #a2a2a2;
 }
 .comments {
   background-color: #ccc;
   padding: 20px;
-}
-.pagination {
-  color: #eee;
-}
-.pagination a:link {
-  color: #fff;
-}
-.pagination a:hover {
-  color: #abbad7;
-}
-.pagination a:visited {
-  color: #c0c0c0;
 }
 .pagination ul {
   display: inline;
@@ -190,26 +145,17 @@ ul.tags li {
   padding-left: 6px;
 }
 .pagination li {
-  color: #eee;
   display: inline;
-}
-.pagination li a:link {
-  color: #fff;
-}
-.pagination li a:hover {
-  color: #abbad7;
-}
-.pagination li a:visited {
-  color: #c0c0c0;
 }
 .pagination li a {
   display: inline-block;
   font-size: 16px;
-  border-radius: 50%;
-  background-color: #333;
+  background-color: #eee;
+  border: 1px solid #ddd;
   padding: 6px;
 }
 .pagination li.active a {
-  background-color: #555;
+  border: 1px solid #888;
+  font-weight: bold;
   text-decoration: none;
 }
