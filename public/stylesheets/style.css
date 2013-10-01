@@ -37,6 +37,9 @@ body>footer p {
 .sidebar aside {
   padding-bottom: 0.5em;
 }
+.sidebar aside .avatar {
+  text-align: center;
+}
 .sidebar aside h1 {
   font-size: 16px;
   color: #3cc8fa;
