@@ -32,4 +32,10 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-app.listen( 3000 );
+app.get('/rss', function (req, res) {
+  var posts = poet.helpers.getPosts(0, 5);
+  res.setHeader('Content-Type', 'application/rss+xml');
+  res.render('rss', { posts: posts });
+});
+
+app.listen(3000);
