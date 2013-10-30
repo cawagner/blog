@@ -1,6 +1,6 @@
 {{{
     "title" : "RIFF: The Once and Future Container Format",
-    "tags"  : [ "meta", "javascript", "history", "riff" ],
+    "tags"  : [ javascript", "history", "riff" ],
     "category" : "Affronts to God",
     "date" : "10-29-2013"
 }}}
