@@ -9,7 +9,7 @@ article.post.full(itemscope,itemtype="http://schema.org/BlogPosting")
     div(itemprop="articleBody")
       != post.content
     footer
-      span.icon-tags
+      span.fa.fa-tags
       ul.tags(itemprop="keywords")
         - each tag in post.tags
           li

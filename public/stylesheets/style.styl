@@ -51,22 +51,32 @@ body>footer
     h1
         font-size: 16px
         color: rgb(60, 200, 250)
-        span.icon
+        span.fa
             color: rgb(60, 150, 250)
     p
         font-size: small-font-size
-    span.icon
+    span.fa
         padding-right: icon-spacing
         font-size: 16px
     ul
         margin: 0
         font-size: 13px
-    ul:not(.tags)
         padding-left: 30px
-    .social
-        padding-left: icon-spacing
+        line-height: 150%
+    ul.tags
+        padding-left: 0
+    ul.social-media-links
+        padding-left: 0
+        margin-left: 0
         a
             text-decoration: none
+            .fa
+                color: text-color
+        li
+            list-style-type: none
+    ul.blogroll-links
+        padding-left: 16px
+        margin-left: 0
 
 @media screen and (max-width: 900px)
     .sidebar
@@ -124,7 +134,7 @@ ul.tags
     footer
         font-size: small-font-size
 
-    .icon-calendar
+    .fa-calendar
         font-size: small-font-size
         margin-right: icon-spacing
     time

@@ -7,7 +7,7 @@ html
     meta(charset='utf-8')
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
-    link(rel='stylesheet', type='text/css', href='//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css')'
+    link(rel='stylesheet', type='text/css', href='//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css')'
     link(rel='alternate',type='application/rss+xml',title='RSS',href='/rss')
     | <!--[if lt IE 9]>
     | <script src="js/html5shiv.js"></script>
@@ -25,7 +25,7 @@ html
     .sidebar
       aside.bio
         h1
-          span.icon-star.icon
+          span.fa.fa-star
           | Bio
         p.avatar
           img(src="http://www.gravatar.com/avatar/3ab6932b729812bc92fee1151dc3b7a2.png")
@@ -33,10 +33,6 @@ html
           | I'm Chris Wagner, a software developer working in <a href="http://www.telerik.com" rel="crush">Telerik</a>'s <a href="http://www.telerik.com/services/overview.aspx">Services Team</a>.
         p
           | As it would happen, my day job and my hobbies intersect very nicely.
-        p.social
-          a(rel="me",href="https://twitter.com/chris_a_wagner")
-            span.icon.icon-twitter
-            |@chris_a_wagner
       //- aside
       //-   h1
       //-     span.icon-folder-open.icon
@@ -47,7 +43,7 @@ html
       //-         a(href=categoryUrl(cat)) #{cat}
       aside
         h1
-          span.icon-tags.icon
+          span.fa.fa-tags
           | Tags
         ul.tags
           - each tag in getTags()
@@ -55,9 +51,22 @@ html
               a(href=tagUrl(tag)) #{tag}
       aside
         h1
-          span.icon-user.icon
+          span.fa.fa-beer
+          | Social Media
+        ul.social-media-links
+          li
+            a(href="http://www.twitter.com/chris_a_wagner")
+              span.fa.fa-twitter-square
+              span @chris_a_wagner
+          li
+            a(href="http://www.github.com/cawagner")
+              span.fa.fa-github-square
+              span cawagner
+      aside
+        h1
+          span.fa.fa-user
           | Blogroll
-        ul
+        ul.blogroll-links
           li
             a(href="http://ardalis.com/") Steve Smith
           li

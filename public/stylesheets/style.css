@@ -44,28 +44,41 @@ body>footer p {
   font-size: 16px;
   color: #3cc8fa;
 }
-.sidebar aside h1 span.icon {
+.sidebar aside h1 span.fa {
   color: #3c96fa;
 }
 .sidebar aside p {
   font-size: 12px;
 }
-.sidebar aside span.icon {
+.sidebar aside span.fa {
   padding-right: 6px;
   font-size: 16px;
 }
 .sidebar aside ul {
   margin: 0;
   font-size: 13px;
-}
-.sidebar aside ul:not(.tags) {
   padding-left: 30px;
+  line-height: 150%;
 }
-.sidebar aside .social {
-  padding-left: 6px;
+.sidebar aside ul.tags {
+  padding-left: 0;
 }
-.sidebar aside .social a {
+.sidebar aside ul.social-media-links {
+  padding-left: 0;
+  margin-left: 0;
+}
+.sidebar aside ul.social-media-links a {
   text-decoration: none;
+}
+.sidebar aside ul.social-media-links a .fa {
+  color: #444;
+}
+.sidebar aside ul.social-media-links li {
+  list-style-type: none;
+}
+.sidebar aside ul.blogroll-links {
+  padding-left: 16px;
+  margin-left: 0;
 }
 @media screen and (max-width: 900px) {
   .sidebar {
@@ -129,7 +142,7 @@ ul.tags li {
 .post footer {
   font-size: 12px;
 }
-.post .icon-calendar {
+.post .fa-calendar {
   font-size: 12px;
   margin-right: 6px;
 }
