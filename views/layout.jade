@@ -41,7 +41,7 @@ html
       //-     span.icon-folder-open.icon
       //-     | Categories
       //-   ul
-      //-     - each cat in categoryList
+      //-     - each cat in getCategories()
       //-       li
       //-         a(href=categoryUrl(cat)) #{cat}
       aside
@@ -49,7 +49,7 @@ html
           span.icon-tags.icon
           | Tags
         ul.tags
-          - each tag in tagList
+          - each tag in getTags()
             li
               a(href=tagUrl(tag)) #{tag}
       aside
